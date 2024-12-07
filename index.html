@@ -877,6 +877,131 @@
             </div>
         </div>
     </div>
-</div></div></div></div><div class="container"><h3 style="color: var(--bs-orange);">Results</h3><p class="fs-5">RESULTS1</p><p class="fs-5" style="margin-top: 1rem;">RESULTS2</p></div><div class="container" style="margin-top: 2rem;"><h3 style="color: var(--bs-orange);">Cite us</h3><p class="fs-5">If you found this work useful, please cite us as follows:</p><p class="font-monospace fs-6">@article{<br>}</p></div><footer class="text-center"><div class="container text-muted py-4 py-lg-5"><ul class="list-inline"><li class="list-inline-item me-4"><a class="link-secondary">Paper on arXiv</a></li><li class="list-inline-item me-4"><a class="link-secondary" href="#">Code on GitHub (available soon)</a></li><li class="list-inline-item"><a class="link-secondary" href="https://sites.google.com/uniroma1.it/ispamm/" data-bs-target="https://sites.google.com/uniroma1.it/ispamm/">ISPAMM Lab</a></li></ul><ul class="list-inline"><li class="list-inline-item me-4"><a href="https://twitter.com/IspammL"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-twitter-x" style="font-size: 15px;color: var(--bs-highlight-color);">
+</div></div></div></div><div class="container"><h2 style="color: var(--bs-orange);">Results</h2><p class="fs-5">Results for Stable-V2A and comparison with other SOTA models on \textit{Greatest Hits}. Table shows whether the model generates the output conditioned on an audio or text prompt; HRC stands for Human Readable Control and refers to the use of time-varying interpretable signals that sound designers can use to control the generation process (i.e., envelope or onsets).</p><div class="table-responsive tableres">
+    <table class="table">
+        <thead>
+            <tr>
+                <th class='right-separator-table orange-borders' style='background: #f69240'><span>Model</span></th>
+                <th class='right-separator-table orange-borders' style='text-align: center; background: #f69240; !important;'>Audio</th>
+                <th class='right-separator-table orange-borders' style='text-align: center; background: #f69240; !important;'>Text</th>
+                <th class='right-separator-table orange-borders' style='text-align: center; background: #f69240; !important;'>HRC</th>
+                <th class='right-separator-table orange-borders' style='text-align: center; background: #f69240; !important;'>FAD-P ↓</th>
+                <th class='right-separator-table orange-borders' style='text-align: center; background: #f69240; !important;'>FAD-C ↓</th>
+                <th class='right-separator-table orange-borders' style='text-align: center; background: #f69240; !important;'>FAD-LC ↓</th>
+                <th class='orange-borders' style='text-align: center; background: #f69240; !important;'>E-LI ↓</th>
+                <th class='orange-borders' style='text-align: center; background: #f69240; !important;'>CLAP ↑</th>
+                <th class='orange-borders' style='text-align: center; background: #f69240; !important;'>FAVD ↓</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="border-bottom: 1px solid #999;">
+                <td class='right-separator-table'>SpecVQGAN</td>
+                <td style='text-align: center;'>❌</td>
+                <td style='text-align: center;'>❌</td>
+                <td class='right-separator-table' style='text-align: center;'>❌</td>
+                <td style='text-align: center;'>99.07</td>
+                <td style='text-align: center;'>1001</td>
+                <td style='text-align: center;'>0.7102</td>
+                <td style='text-align: center;'>0.0427</td>
+                <td style='text-align: center;'>0.1418</td>
+                <td style='text-align: center;'>6.5136</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #999;">
+                <td class='right-separator-table'>Diff-Foley</td>
+                <td style='text-align: center;'>❌</td>
+                <td style='text-align: center;'>❌</td>
+                <td class='right-separator-table' style='text-align: center;'>❌</td>
+                <td style='text-align: center;'>85.70</td>
+                <td style='text-align: center;'>654</td>
+                <td style='text-align: center;'>0.4690</td>
+                <td style='text-align: center;'>0.0448</td>
+                <td style='text-align: center;'>0.3733</td>
+                <td style='text-align: center;'>4.6186</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #999;">
+                <td class='right-separator-table'>CondFoleyGen</td>
+                <td style='text-align: center;'>✅</td>
+                <td style='text-align: center;'>❌</td>
+                <td class='right-separator-table' style='text-align: center;'>❌</td>
+                <td style='text-align: center;'>74.93</td>
+                <td style='text-align: center;'>650</td>
+                <td style='text-align: center;'>0.4883</td>
+                <td style='text-align: center;'>0.0357</td>
+                <td style='text-align: center;'>0.4879</td>
+                <td style='text-align: center;'>6.4814</td>
+            </tr>
+            <tr>
+                <td class='right-separator-table' rowspan="2" style="vertical-align: middle; border-bottom: 1px solid #999;">SyncFusion</td>
+                <td style='text-align: center;'>❌</td>
+                <td style='text-align: center;'>✅</td>
+                <td class='right-separator-table' style='text-align: center;'>✅</td>
+                <td style='text-align: center;'>35.64</td>
+                <td style='text-align: center;'>591</td>
+                <td style='text-align: center;'>0.4365</td>
+                <td style='text-align: center;'>0.0231</td>
+                <td style='text-align: center;'>0.5154</td>
+                <td style='text-align: center;'>4.3020</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #999;">
+                <td style='text-align: center;'>✅</td>
+                <td style='text-align: center;'>❌</td>
+                <td class='right-separator-table' style='text-align: center;'>✅</td>
+                <td style='text-align: center;'>27.85</td>
+                <td style='text-align: center;'>542</td>
+                <td style='text-align: center;'>0.2793</td>
+                <td style='text-align: center;'>0.0177</td>
+                <td style='text-align: center;'>0.6621</td>
+                <td style='text-align: center;'>3.2825</td>
+            </tr>
+            <tr>
+                <td class='right-separator-table' rowspan="2" style="vertical-align: middle; border-bottom: 1px solid #999;">Video-Foley</td>
+                <td style='text-align: center;'>❌</td>
+                <td style='text-align: center;'>✅</td>
+                <td class='right-separator-table' style='text-align: center;'>✅</td>
+                <td style='text-align: center;'>67.04</td>
+                <td style='text-align: center;'>644</td>
+                <td style='text-align: center;'>0.4997</td>
+                <td style='text-align: center;'>0.0242</td>
+                <td style='text-align: center;'>0.3680</td>
+                <td style='text-align: center;'>4.9106</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #999;">
+                <td style='text-align: center;'>✅</td>
+                <td style='text-align: center;'>❌</td>
+                <td class='right-separator-table' style='text-align: center;'>✅</td>
+                <td style='text-align: center;'>28.45</td>
+                <td style='text-align: center;'>435</td>
+                <td style='text-align: center;'>0.1671</td>
+                <td style='text-align: center;'>0.0183</td>
+                <td style='text-align: center;'>0.6779</td>
+                <td style='text-align: center;'>2.2070</td>
+            </tr>
+            <tr>
+                <td class='right-separator-table' rowspan="2" style="vertical-align: middle; border-bottom: 1px solid #999;"><b>Stable-V2A (Ours)</b></td>
+                <td style='text-align: center;'>❌</td>
+                <td style='text-align: center;'>✅</td>
+                <td class='right-separator-table' style='text-align: center;'>✅</td>
+                <td style='text-align: center;'>32.80</td>
+                <td style='text-align: center;'>381</td>
+                <td style='text-align: center;'>0.2516</td>
+                <td style='text-align: center;'><b>0.0137</b></td>
+                <td style='text-align: center;'>0.4806</td>
+                <td style='text-align: center;'>3.9413</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #999;">
+                <td style='text-align: center;'>✅</td>
+                <td style='text-align: center;'>❌</td>
+                <td class='right-separator-table' style='text-align: center;'>✅</td>
+                <td style='text-align: center;'><b>16.57</b></td>
+                <td style='text-align: center;'><b>217</b></td>
+                <td style='text-align: center;'><b>0.1048</b></td>
+                <td style='text-align: center;'><b>0.0137</b></td>
+                <td style='text-align: center;'><b>0.6833</b></td>
+                <td style='text-align: center;'><b>2.0264</b></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div><div class="container" style="margin-top: 2rem;"><h2 style="color: var(--bs-orange);">Cite us</h2><p class="fs-5">If you found this work useful, please cite us as follows:</p><p class="font-monospace fs-6">@article{<br>}</p></div><footer class="text-center"><div class="container text-muted py-4 py-lg-5"><ul class="list-inline"><li class="list-inline-item me-4"><a class="link-secondary">Paper on arXiv</a></li><li class="list-inline-item me-4"><a class="link-secondary" href="#">Code on GitHub (available soon)</a></li><li class="list-inline-item"><a class="link-secondary" href="https://sites.google.com/uniroma1.it/ispamm/" data-bs-target="https://sites.google.com/uniroma1.it/ispamm/">ISPAMM Lab</a></li></ul><ul class="list-inline"><li class="list-inline-item me-4"><a href="https://twitter.com/IspammL"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-twitter-x" style="font-size: 15px;color: var(--bs-highlight-color);">
   <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"></path>
 </svg></a></li></ul></div></footer><script src="assets/js/jquery.min.js?h=6bcc3684f18aa21874fa709f122723cf"></script><script src="assets/bootstrap/js/bootstrap.min.js?h=374d178d651fa0eaf680a1fa7b40c788"></script><script src="assets/js/script.min.js?h=114cfbd3685df984d1d26b4d1f6a37e3"></script><script src="assets/js/interactivity.min.js?h=4d7e1f180996c912b02700f52914af2a"></script><script src="assets/js/spectrogram-player.min.js?h=fc7e3f4c3a25829d8466c9e636edded4"></script></body></html>
