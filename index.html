@@ -687,11 +687,11 @@
             </div>
         </div>
     </div>
-</div></div></div></div><div class="container"><h3 style="color: var(--bs-link-hover-color);font-style: italic;margin-top: 3.5rem;">Walking The Maps</h3><p class="fs-5" style="text-align: justify;">In this work, we introduce a new dataset named <strong><em>Walking The Maps</em></strong> (WTM).<br><br>WTM includes short videos from gameplay sessions from YouTube of 4&nbsp;video games: Hogwarts Legacy, Zelda Breath of the Wild, Assassin's Creed: Odyssey, Assassin's Creed IV Black Flag.<br><br>For each video, we extracted only clips in which the sound of the steps is clearly audible and there are no other possible sound sources in the video that can be related to the target sound.</p></div><div class="container" style="margin-bottom: 2.5rem;border-style: dashed;border-color: #4c515580;border-radius: 16px;margin-top: 1.5rem;"><div class="row"><div class="col-md-12"><p class="fs-5" style="margin-top: 1rem;margin-bottom: 0rem;background: #00000012;border-radius: 16px;text-align: center;padding: 8px;"><strong>Example 1 - WTM</strong></p><div class="container py-3 video-audio-section">
+</div></div></div></div><div class="container"><h3 style="color: var(--bs-link-hover-color);font-style: italic;margin-top: 3.5rem;">Walking The Maps</h3><p class="fs-5" style="text-align: justify;">In this work, we introduce a new dataset named <strong><em>Walking The Maps</em></strong> (WTM).<br><br>WTM includes short videos from gameplay sessions from YouTube of 4&nbsp;video games: Hogwarts Legacy, Zelda Breath of the Wild, Assassin's Creed: Odyssey, Assassin's Creed IV Black Flag.<br><br>For each video, we extracted only clips in which the sound of the steps is clearly audible and there are no other possible sound sources in the video that can be related to the target sound.</p><div class="row d-md-flex d-xl-flex justify-content-md-center justify-content-xl-center" style="margin-bottom: 3rem;"><div class="col-md-9 col-lg-8 col-xl-7 col-xxl-6 offset-xxl-0 d-xxl-flex align-items-xxl-center"><figure class="figure"><img class="img-fluid figure-img" src="assets/img/wtm-sample-2.jpg?h=1b50000e95a91d693069d51f6093f243"><figcaption class="figure-caption"><strong>Figure 3.</strong> Samples from the \textit{Walking The Maps} dataset highlighting different lighting conditions and grounds.</figcaption></figure></div></div></div><div class="container" style="margin-bottom: 2.5rem;border-style: dashed;border-color: #4c515580;border-radius: 16px;margin-top: 1.5rem;"><div class="row"><div class="col-md-12"><p class="fs-5" style="margin-top: 1rem;margin-bottom: 0rem;background: #00000012;border-radius: 16px;text-align: center;padding: 8px;"><strong>Example 1</strong></p><div class="container py-3 video-audio-section">
         <!-- Video Section -->
         <div id="video-container" class="video-container position-sticky top-0 bg-white text-center py-2">
-            <video id="video2" width="100%" height="256" max-height="256px" max-width="256px" muted>
-                <source src="./assets/samples/0343_video.mp4" type="video/mp4">
+            <video id="video1" width="100%" height="256" max-height="256px" max-width="256px" muted>
+                <source src="./assets/samples/wtm/0121_video.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>    
@@ -701,102 +701,182 @@
             <div class="audio-container position-relative" data-title="GT" 
             data-modalities="">
                 <div class="spectrogram-wrapper mt-3">
-                    <img src="./assets/samples/GT_343.png" class="img-fluid" alt="Spectrogram 1">
+                    <img src="./assets/samples/wtm/GT_121.png" class="img-fluid" alt="Spectrogram 1">
                     <div class="playback-line"></div>
                 </div>
                 <audio class="audio-player" data-index="1" controls>
-                    <source src="./assets/samples/GT_343.wav" type="audio/wav">
+                    <source src="./assets/samples/wtm/GT_121.wav" type="audio/wav">
                     Your browser does not support the audio tag.
                 </audio>
             </div>
         </div>
         <div class="col-md-6">
             <div class="audio-container position-relative" data-title="Ours" 
-            data-modalities="audio,text">
+            data-modalities="audio">
                 
                 <div class="spectrogram-wrapper">
-                    <img src="./assets/samples/ours_343.png" class="img-fluid" alt="Spectrogram 2">
+                    <img src="./assets/samples/wtm/ours_121.png" class="img-fluid" alt="Spectrogram 2">
                     <div class="playback-line"></div>
                 </div>
                 <audio class="audio-player" data-index="2" controls>
-                    <source src="./assets/samples/ours_343.wav" type="audio/mp3">
-                    Your browser does not support the audio tag.
-                </audio>
-            </div>
-        </div>
-
-        <!-- Second Row -->
-        <div class="col-md-6">
-            <div class="audio-container position-relative" data-title="Video-Foley" 
-            data-modalities="audio,text">
-                <div class="spectrogram-wrapper">
-                    <img src="./assets/samples/videofoley_343.png" class="img-fluid" alt="Spectrogram 3">
-                    <div class="playback-line"></div>
-                </div>
-                <audio class="audio-player" data-index="3" controls>
-                    <source src="./assets/samples/videofoley_343.wav" type="audio/mp3">
-                    Your browser does not support the audio tag.
-                </audio>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="audio-container position-relative" data-title="SyncFusion" 
-            data-modalities="audio,text">
-                <div class="spectrogram-wrapper">
-                    <img src="./assets/samples/syncfusion_343.png" class="img-fluid" alt="Spectrogram 4">
-                    <div class="playback-line"></div>
-                </div>
-                <audio class="audio-player" data-index="4" controls>
-                    <source src="./assets/samples/syncfusion_343.wav" type="audio/mp3">
-                    Your browser does not support the audio tag.
-                </audio>
-            </div>
-        </div>
-
-        <!-- Third Row -->
-        <div class="col-md-6">
-            <div class="audio-container position-relative" data-title="CondFoleyGen" 
-            data-modalities="audio">
-                <div class="spectrogram-wrapper">
-                    <img src="./assets/samples/condfoleygen_343.png" class="img-fluid" alt="Spectrogram 3">
-                    <div class="playback-line"></div>
-                </div>
-                <audio class="audio-player" data-index="3" controls>
-                    <source src="./assets/samples/condfoleygen_343.wav" type="audio/mp3">
-                    Your browser does not support the audio tag.
-                </audio>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="audio-container position-relative" data-title="Diff-Foley" 
-            data-modalities="">
-                <div class="spectrogram-wrapper">
-                    <img src="./assets/samples/difffoley_343.png" class="img-fluid" alt="Spectrogram 4">
-                    <div class="playback-line"></div>
-                </div>
-                <audio class="audio-player" data-index="4" controls>
-                    <source src="./assets/samples/difffoley_343.wav" type="audio/mp3">
-                    Your browser does not support the audio tag.
-                </audio>
-            </div>
-        </div>
-        
-        
-        <!-- Forth Row -->
-        <div class="col-md-6">
-            <div class="audio-container position-relative" data-title="SpecVQGAN" 
-            data-modalities="">
-                <div class="spectrogram-wrapper">
-                    <img src="./assets/samples/specvqgan_343.png" class="img-fluid" alt="Spectrogram 3">
-                    <div class="playback-line"></div>
-                </div>
-                <audio class="audio-player" data-index="3" controls>
-                    <source src="./assets/samples/specvqgan_343.wav" type="audio/mp3">
+                    <source src="./assets/samples/wtm/ours_121.wav" type="audio/mp3">
                     Your browser does not support the audio tag.
                 </audio>
             </div>
         </div>
     </div>
-</div></div></div></div><div class="container"><h3 style="color: var(--bs-orange);">Results</h3><p class="fs-5">RESULTS1</p><p class="fs-5" style="margin-top: 1rem;">RESULTS2</p></div><div class="container" style="margin-top: 2rem;"><h3 style="color: var(--bs-orange);">Cite us</h3><p class="fs-5">If you found this work useful, please cite us as follows:</p><p class="font-monospace fs-6">@article{<br>}</p></div><footer class="text-center"><div class="container text-muted py-4 py-lg-5"><ul class="list-inline"><li class="list-inline-item me-4"><a class="link-secondary">Paper on arXiv</a></li><li class="list-inline-item me-4"><a class="link-secondary" href="#">Code on GitHub (available soon)</a></li><li class="list-inline-item"><a class="link-secondary" href="https://sites.google.com/uniroma1.it/ispamm/" data-bs-target="https://sites.google.com/uniroma1.it/ispamm/">ISPAMM Lab</a></li></ul><ul class="list-inline"><li class="list-inline-item me-4"><a href="https://twitter.com/IspammL"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-twitter" style="font-size: 15px;color: var(--bs-highlight-color);">
-  <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15"></path>
+</div></div></div></div><div class="container" style="margin-bottom: 2.5rem;border-style: dashed;border-color: #4c515580;border-radius: 16px;margin-top: 1.5rem;"><div class="row"><div class="col-md-12"><p class="fs-5" style="margin-top: 1rem;margin-bottom: 0rem;background: #00000012;border-radius: 16px;text-align: center;padding: 8px;"><strong>Example 2</strong></p><div class="container py-3 video-audio-section">
+        <!-- Video Section -->
+        <div id="video-container" class="video-container position-sticky top-0 bg-white text-center py-2">
+            <video id="video1" width="100%" height="256" max-height="256px" max-width="256px" muted>
+                <source src="./assets/samples/wtm/0001_video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>    
+    <div class="row g-3 mt-2">
+        <!-- First Row -->
+        <div class="col-md-6">
+            <div class="audio-container position-relative" data-title="GT" 
+            data-modalities="">
+                <div class="spectrogram-wrapper mt-3">
+                    <img src="./assets/samples/wtm/GT_1.png" class="img-fluid" alt="Spectrogram 1">
+                    <div class="playback-line"></div>
+                </div>
+                <audio class="audio-player" data-index="1" controls>
+                    <source src="./assets/samples/wtm/GT_1.wav" type="audio/wav">
+                    Your browser does not support the audio tag.
+                </audio>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="audio-container position-relative" data-title="Ours" 
+            data-modalities="audio">
+                
+                <div class="spectrogram-wrapper">
+                    <img src="./assets/samples/wtm/ours_1.png" class="img-fluid" alt="Spectrogram 2">
+                    <div class="playback-line"></div>
+                </div>
+                <audio class="audio-player" data-index="2" controls>
+                    <source src="./assets/samples/wtm/ours_1.wav" type="audio/mp3">
+                    Your browser does not support the audio tag.
+                </audio>
+            </div>
+        </div>
+    </div>
+</div></div></div></div><div class="container" style="margin-bottom: 2.5rem;border-style: dashed;border-color: #4c515580;border-radius: 16px;margin-top: 1.5rem;"><div class="row"><div class="col-md-12"><p class="fs-5" style="margin-top: 1rem;margin-bottom: 0rem;background: #00000012;border-radius: 16px;text-align: center;padding: 8px;"><strong>Example 3</strong></p><div class="container py-3 video-audio-section">
+        <!-- Video Section -->
+        <div id="video-container" class="video-container position-sticky top-0 bg-white text-center py-2">
+            <video id="video1" width="100%" height="256" max-height="256px" max-width="256px" muted>
+                <source src="./assets/samples/wtm/0409_video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>    
+    <div class="row g-3 mt-2">
+        <!-- First Row -->
+        <div class="col-md-6">
+            <div class="audio-container position-relative" data-title="GT" 
+            data-modalities="">
+                <div class="spectrogram-wrapper mt-3">
+                    <img src="./assets/samples/wtm/GT_409.png" class="img-fluid" alt="Spectrogram 1">
+                    <div class="playback-line"></div>
+                </div>
+                <audio class="audio-player" data-index="1" controls>
+                    <source src="./assets/samples/wtm/GT_409.wav" type="audio/wav">
+                    Your browser does not support the audio tag.
+                </audio>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="audio-container position-relative" data-title="Ours" 
+            data-modalities="audio">
+                
+                <div class="spectrogram-wrapper">
+                    <img src="./assets/samples/wtm/ours_409.png" class="img-fluid" alt="Spectrogram 2">
+                    <div class="playback-line"></div>
+                </div>
+                <audio class="audio-player" data-index="2" controls>
+                    <source src="./assets/samples/wtm/ours_409.wav" type="audio/mp3">
+                    Your browser does not support the audio tag.
+                </audio>
+            </div>
+        </div>
+    </div>
+</div></div></div></div><div class="container" style="margin-bottom: 2.5rem;border-style: dashed;border-color: #4c515580;border-radius: 16px;margin-top: 1.5rem;"><div class="row"><div class="col-md-12"><p class="fs-5" style="margin-top: 1rem;margin-bottom: 0rem;background: #00000012;border-radius: 16px;text-align: center;padding: 8px;"><strong>Example 4</strong></p><div class="container py-3 video-audio-section">
+        <!-- Video Section -->
+        <div id="video-container" class="video-container position-sticky top-0 bg-white text-center py-2">
+            <video id="video1" width="100%" height="256" max-height="256px" max-width="256px" muted>
+                <source src="./assets/samples/wtm/0279_video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>    
+    <div class="row g-3 mt-2">
+        <!-- First Row -->
+        <div class="col-md-6">
+            <div class="audio-container position-relative" data-title="GT" 
+            data-modalities="">
+                <div class="spectrogram-wrapper mt-3">
+                    <img src="./assets/samples/wtm/GT_279.png" class="img-fluid" alt="Spectrogram 1">
+                    <div class="playback-line"></div>
+                </div>
+                <audio class="audio-player" data-index="1" controls>
+                    <source src="./assets/samples/wtm/GT_279.wav" type="audio/wav">
+                    Your browser does not support the audio tag.
+                </audio>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="audio-container position-relative" data-title="Ours" 
+            data-modalities="audio">
+                
+                <div class="spectrogram-wrapper">
+                    <img src="./assets/samples/wtm/ours_279.png" class="img-fluid" alt="Spectrogram 2">
+                    <div class="playback-line"></div>
+                </div>
+                <audio class="audio-player" data-index="2" controls>
+                    <source src="./assets/samples/wtm/ours_279.wav" type="audio/mp3">
+                    Your browser does not support the audio tag.
+                </audio>
+            </div>
+        </div>
+    </div>
+</div></div></div></div><div class="container" style="margin-bottom: 2.5rem;border-style: dashed;border-color: #4c515580;border-radius: 16px;margin-top: 1.5rem;"><div class="row"><div class="col-md-12"><p class="fs-5" style="margin-top: 1rem;margin-bottom: 0rem;background: #00000012;border-radius: 16px;text-align: center;padding: 8px;"><strong>Example 5</strong></p><div class="container py-3 video-audio-section">
+        <!-- Video Section -->
+        <div id="video-container" class="video-container position-sticky top-0 bg-white text-center py-2">
+            <video id="video1" width="100%" height="256" max-height="256px" max-width="256px" muted>
+                <source src="./assets/samples/wtm/0192_video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>    
+    <div class="row g-3 mt-2">
+        <!-- First Row -->
+        <div class="col-md-6">
+            <div class="audio-container position-relative" data-title="GT" 
+            data-modalities="">
+                <div class="spectrogram-wrapper mt-3">
+                    <img src="./assets/samples/wtm/GT_192.png" class="img-fluid" alt="Spectrogram 1">
+                    <div class="playback-line"></div>
+                </div>
+                <audio class="audio-player" data-index="1" controls>
+                    <source src="./assets/samples/wtm/GT_192.wav" type="audio/wav">
+                    Your browser does not support the audio tag.
+                </audio>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="audio-container position-relative" data-title="Ours" 
+            data-modalities="audio">
+                
+                <div class="spectrogram-wrapper">
+                    <img src="./assets/samples/wtm/ours_192.png" class="img-fluid" alt="Spectrogram 2">
+                    <div class="playback-line"></div>
+                </div>
+                <audio class="audio-player" data-index="2" controls>
+                    <source src="./assets/samples/wtm/ours_192.wav" type="audio/mp3">
+                    Your browser does not support the audio tag.
+                </audio>
+            </div>
+        </div>
+    </div>
+</div></div></div></div><div class="container"><h3 style="color: var(--bs-orange);">Results</h3><p class="fs-5">RESULTS1</p><p class="fs-5" style="margin-top: 1rem;">RESULTS2</p></div><div class="container" style="margin-top: 2rem;"><h3 style="color: var(--bs-orange);">Cite us</h3><p class="fs-5">If you found this work useful, please cite us as follows:</p><p class="font-monospace fs-6">@article{<br>}</p></div><footer class="text-center"><div class="container text-muted py-4 py-lg-5"><ul class="list-inline"><li class="list-inline-item me-4"><a class="link-secondary">Paper on arXiv</a></li><li class="list-inline-item me-4"><a class="link-secondary" href="#">Code on GitHub (available soon)</a></li><li class="list-inline-item"><a class="link-secondary" href="https://sites.google.com/uniroma1.it/ispamm/" data-bs-target="https://sites.google.com/uniroma1.it/ispamm/">ISPAMM Lab</a></li></ul><ul class="list-inline"><li class="list-inline-item me-4"><a href="https://twitter.com/IspammL"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-twitter-x" style="font-size: 15px;color: var(--bs-highlight-color);">
+  <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"></path>
 </svg></a></li></ul></div></footer><script src="assets/js/jquery.min.js?h=6bcc3684f18aa21874fa709f122723cf"></script><script src="assets/bootstrap/js/bootstrap.min.js?h=374d178d651fa0eaf680a1fa7b40c788"></script><script src="assets/js/script.min.js?h=114cfbd3685df984d1d26b4d1f6a37e3"></script><script src="assets/js/interactivity.min.js?h=4d7e1f180996c912b02700f52914af2a"></script><script src="assets/js/spectrogram-player.min.js?h=fc7e3f4c3a25829d8466c9e636edded4"></script></body></html>
